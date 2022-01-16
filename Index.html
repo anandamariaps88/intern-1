@@ -37,7 +37,7 @@
             </div>
             <div class="col">
               <div class="dropdown pading-top mb-3">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></input>
+                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                   <li><a class="dropdown-item active" href="#">Ada</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -54,7 +54,7 @@
             </div>
             <div class="col">
               <div class="dropdown pading-top">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></input>
+                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                   <li><a class="dropdown-item active" href="#">Ada</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -71,7 +71,7 @@
             </div>
             <div class="col">
               <div class="dropdown pading-top">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></input>
+                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                   <li><a class="dropdown-item active" href="#">Ada</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -88,7 +88,7 @@
             </div>
             <div class="col">
               <div class="dropdown pading-top">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></input>
+                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                   <li><a class="dropdown-item active" href="#">Ada</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -97,12 +97,10 @@
               </div>
             </div>
           </div>
+          <input type ="button" class=" btn btn-group ms-auto btn-success" value = "Simpan" ></input>
+          <input type ="button" class=" btn btn-group ms-auto btn-primary"value ="Lihat Hasil"></input>
         </form>
       </div>
-      <ul class="btn-group ms-auto" >
-        <a href="#" class="btn btn-success">Simpan</a>
-        <a href="#" class="btn btn-primary active" aria-current="page">Lihat Hasil</a>
-      </ul>
     </section>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzqwfP1AS9GH0pUc3HZOPgniuVkga6jDXrVpc-H90IYnMQel9hdk6RRyoHSaTRhFEJrNQ/exec';
@@ -115,13 +113,8 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
-    <form name="submit-to-google-sheet">
-      <input name="email" type="email" placeholder="Email" required />
-      <button type="submit">Send</button>
-    </form>
-
     <script>
-      const scriptURL = '<SCRIPT URL>';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzqwfP1AS9GH0pUc3HZOPgniuVkga6jDXrVpc-H90IYnMQel9hdk6RRyoHSaTRhFEJrNQ/exec';
       const form = document.forms['submit-to-google-sheet'];
 
       form.addEventListener('submit', (e) => {
