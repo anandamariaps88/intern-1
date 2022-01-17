@@ -26,85 +26,45 @@
 
     <!-- Pilihan-->
     <section id="pilihan">
-      <div class="container">
         <!-- Content here -->
-        <form name="Checklist Data">
+      <form name="checklist-data">
+        <div class="container">
           <div class="row">
-            <div class="col bd-highlight fw-bold" style="width: 8rem">
-              <p> 1.
-              <input type="text" name="Kelengkapan Berkas" value="IMB" />
-              </p>
+            <div class="col bd-highlight fw-bold"style="width: 8rem">
+              <p>Kelengkapan Berkas</p>  
             </div>
-            <div class="col">
-              <div class="dropdown pading-top mb-3">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Ada</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Tidak Ada</a></li>
-                </ul>
+              <div class="col-6 pading-top">  
+                <select name = 'Kelengkapan Berkas' inputmode="dropdown" class="form-select" id="inputGroupSelect01">
+                  <option selected>Pilih Salah Satu</option>
+                  <option value="1">1. IMB</option>
+                  <option value="2">2. Sertifikat</option>
+                  <option value="3">3. SLO-TR</option>
+                  <option value="4">4. SLO-TM</option>
+                </select>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col bd-highlight fw-bold" style="width: 8rem">
-              <p> 2.
-              <input type="text" name="Kelengkapan Berkas" value="Sertifikat" />
-              </p>
-            </div>
-            <div class="col">
-              <div class="dropdown pading-top">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Ada</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Tidak Ada</a></li>
-                </ul>
+            <div class="row">
+              <div class="col bd-highlight fw-bold"style="width: 8rem">
+                <p>Ketersediaan</p> 
+              </div>
+              <div class="col  pading-top">
+                <div class="dropdown pading-top mb-3" inputmode="dropdown" >
+                  <select class="form-select" id="inputGroupSelect02" name = 'Ketersediaan'>
+                    <option selected>Pilih Salah Satu</option>
+                    <option value="1">Ada</option>
+                    <option value="2">Tidak Ada</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col bd-highlight fw-bold" style="width: 8rem">
-              <p> 3.
-                <input type="text" name="Kelengkapan Berkas" value="SLO-TR" />
-              </p>
-            </div>
-            <div class="col">
-              <div class="dropdown pading-top">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Ada</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Tidak Ada</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col bd-highlight fw-bold" style="width: 8rem">
-              <p> 4.
-                <input type="text" name="Kelengkapan Berkas" value="SLO TM" />
-              </p>
-            </div>
-            <div class="col">
-              <div class="dropdown pading-top">
-                <input button class="btn btn-secondary dropdown-toggle btn-sm" type="dropdown button" value="Pilih Salah Satu" id="dropdownMenuButton2" data-bs-toggle="dropdown" name = "Ada/Tidak Ada"></input>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Ada</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Tidak Ada</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <button type ="submit" class=" btn btn-group ms-auto btn-success">Simpan</button>
-          <button type ="submit" class =" btn btn-group ms-auto btn-primary">Lihat Hasil</button>
-        </form>
-      </div>
+          <input type="submit" class="btn btn-group ms-auto btn-success" value = "Simpan"></input>
+          <a href="https://docs.google.com/spreadsheets/d/1rQ8WIGDJGTndK-zQe_MXFRxzY8DJow491ZxxQrK3vEw/edit#gid=0">Lihat Hasil</a>
+        </div>
+      </form>
     </section>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzqwfP1AS9GH0pUc3HZOPgniuVkga6jDXrVpc-H90IYnMQel9hdk6RRyoHSaTRhFEJrNQ/exec';
-      const form = document.forms['Checklist Data'];
+      const scriptURL = https = 'https://script.google.com/macros/s/AKfycbzqwfP1AS9GH0pUc3HZOPgniuVkga6jDXrVpc-H90IYnMQel9hdk6RRyoHSaTRhFEJrNQ/exec';
+      const form = document.forms['checklist-data'];
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();

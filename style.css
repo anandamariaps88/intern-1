@@ -2,10 +2,11 @@
   padding: 2rem 2rem;
   margin-left: 12rem mb-3;
 }
-
-.row {
-  margin: center;
-  margin-bottom: 1rem;
+.col {
+  padding: 1rem 1rem;
+}
+.form-select {
+  background-color: rgb(230, 230, 230);
 }
 section {
   padding-top: 2rem;
