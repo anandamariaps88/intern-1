@@ -27,161 +27,65 @@
 
   <!-- Pilihan-->
   <section id="pilihan">
-    <div class="container">
       <!-- Content here -->
+      <form name="progres-data">
         <div class="row">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Berhasil!</strong> 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>1. Permohonan</p>
+            <p>Progres Berkas</p>  
           </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
+            <div class="col-6 pading-top">  
+              <select name = 'Kelengkapan Berkas' inputmode="dropdown" class="form-select" id="inputGroupSelect01">
+                <option selected>Pilih Salah Satu</option>
+                <option value="1. Permohonan">1. Permohonan</option>
+                <option value="2. Hasil Survey">2. Hasil Survey</option>
+                <option value="3. MOM Pelanggan">3. MOM Pelanggan</option>
+                <option value="4. SIP Terbit">4. SIP Terbit</option>
+                <option value="5. SIP Terbit">5. SIP Terbit</option>
+                <option value="6. Tanggal Bayar">6. Tanggal Bayar</option>
+                <option value="7. No PK Ke  Konsumen">7. No PK Ke  Konsumen</option>
+                <option value="8.Pekerjaan">8.Pekerjaan</option>
+                <option value="9. Infograsi">9. Infograsi</option>
+                <option value="10. Peremajaan">10. Peremajaan</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col bd-highlight fw-bold"style="width: 8rem">
+              <p>Ketersediaan</p> 
+            </div>
+            <div class="col  pading-top">
+              <div class="dropdown pading-top mb-3" inputmode="dropdown" >
+                <select class="form-select" id="inputGroupSelect02" name = 'Ketersediaan'>
+                  <option selected>Pilih Salah Satu</option>
+                  <option value="Ada">Ada</option>
+                  <option value="Tidak Ada">Tidak Ada</option>
+                </select>
               </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>2. Hasil Survey</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>3. MOM Pelanggan</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>4. Verifikasi Berkas Lengkap</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>5. SIP Terbit</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>6. Tanggal Bayar</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>7. No PK Ke Konsumen</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>8. Pekerjaan</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>9. Infografis</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col bd-highlight fw-bold"style="width: 8rem">
-            <p>10. Peremajaan</p>
-          </div>
-          <div class="col-6">
-              <div class="dropdown pading-top">
-                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pilih salah satu</button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Sudah</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Belum</a></li>
-                </ul>
-              </div>
-          </div>
-        </div>
+          <input type="submit" class="btn btn-group ms-auto btn-primary" value = "Simpan"></input>
+          <button class="btn btn-primary d-none" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+          </button>
+        <a href="https://docs.google.com/spreadsheets/d/1rQ8WIGDJGTndK-zQe_MXFRxzY8DJow491ZxxQrK3vEw/edit#gid=195590204">Lihat Hasil</a>
       </div>
-      <ul class="btn-group ms-auto" >
-        <a href="#" class="btn btn-danger">Simpan</a>
-        <a href="#" class="btn btn-primary active" aria-current="page">Lihat Hasil</a>
-      </ul>
+    </form>
+  </section>
+  <script>
+    const scriptURL = https = 'https://script.google.com/macros/s/AKfycbxL5z_bbmOeyc9OY97LTm7Pb4oaUJPiBwL3Cp8MR8Dt0OBjEB7A_YIlyau696uwCTRc/exec';
+    const form = document.forms['progres-data'];
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then((response) => console.log(form)
+        .catch((error) => console.error('Error!', error.message)));
+    });
+  </script>
+</body>
 </html>
